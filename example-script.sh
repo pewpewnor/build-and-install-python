@@ -20,4 +20,4 @@ make -j $(($(nproc) / 2 + 1))
 sudo make altinstall
 
 cd ..
-rm -r ./Python-3.14.1
+rm -r ./$python_file
