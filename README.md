@@ -18,7 +18,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 
 ## Configure The Python Build
 
-### Recommended
+### Recommended:
 ```sh
 ./configure --enable-optimizations --with-ensurepip=install
 ```
@@ -26,7 +26,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 - `--enable-optimizations` enables optimizations for the resulting Python build, good for actual Python use
 - `--with-ensurepip=install` ensures your Python build would automatically contain the `pip` and `venv` module
 
-### Other Flags
+### Other Flags:
 ```sh
 ./configure --help
 ```
@@ -53,13 +53,13 @@ make -j $(($(nproc) / 2))
 
 ## Install
 
-### Recommended
+### Recommended:
 ```sh
 sudo make altinstall
 ```
 
 This will install your Python to `/usr/local/bin/`
 
-### Not Recommended
+### Not Recommended:
 
 `sudo make install` will replace your system's `python3`, which can break your system if it depends on that specific Python (e.g. `GNOME`)
