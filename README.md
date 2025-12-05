@@ -3,6 +3,7 @@
 ## TL;DR
 - Download desired Python source code from https://www.python.org/ftp/python/
 - Extract archive and cd into the directory
+- Install build prerequisites
 - `./configure --enable-optimizations --with-ensurepip=install`
 - `make -j <number of processors>`
 - `sudo make altinstall`
